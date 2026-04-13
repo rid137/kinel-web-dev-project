@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  WEEK 2 — HTML Basics & Semantic HTML
+  ============================================================
+
+  Key concepts introduced here:
+  - The HTML document skeleton (DOCTYPE, html, head, body)
+  - Headings (h1–h3), paragraphs, images, links, lists
+  ============================================================
+-->
+
+<!-- lang="en" tells browsers and screen readers the page language -->
+<html lang="en">
+
+<head>
+  <!-- ======================================================
+    HEAD SECTION — Invisible metadata about the page
+    Nothing in <head> appears on screen directly.
+  ====================================================== -->
+
+  <!-- UTF-8 handles all characters: emojis, accents, symbols -->
+  <meta charset="UTF-8" />
+
+  <!-- Without this, mobile browsers zoom out to show a "desktop" view.
+       width=device-width makes the page match the device screen width. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- This text appears in the browser tab -->
+  <title>Alex Dev — Web Developer</title>
+</head>
+
+<!-- For icons -->
+<!-- win+. -->
+
+<body>
+  <!-- Header -->
+  <header>
+    <p>Alex.dev</p>
+
+    <nav>
+      <a href="home">Home</a>
+      <a href="projects">Projects</a>
+      <a href="contact">Contact</a>
+      <span>Dark Mode</span>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- hero section/showcase -->
+    <section>
+      <h1>Hi, I'm Alex 👋</h1>
+
+      <p>A web developer who loves building things for the internet. I write clean HTML, CSS, and JavaScript.</p>
+
+      <a href="projects">View My Works</a>
+      <a href="contacts">Get In Touch</a>
+    </section>
+
+    <!-- About Me Section -->
+     <section>
+      <h2>About Me</h2>
+      <p>I'm a junior web developer based in London. I started learning to code at Kinel Academy and fell in love with turning ideas into real things people can use online.</p>
+
+      <p>When I'm not coding, I enjoy photography, hiking, and making extremely strong coffee.</p>
+
+      <h1>Alex</h1>
+     </section> 
+
+     <!-- My Skill Section -->
+      <section>
+        <h2>My Skills</h2>
+      </section>
+
+
+      <!-- Featured Projects Section -->
+       <section>
+        <h2>Featured Projects</h2>
+        <p>A few things I've built so far.</p>
+
+        <!-- 1st card -->
+        <article>
+          <h2>🍕 Recipe Finder</h2>
+          <p>A webpage that shows recipes based on ingredients you have at home.</p>
+          <a href="projects">View Project</a>
+        </article>
+
+        <!-- 2nd card -->
+        <article>
+          <h2>🌦️ Weather App</h2>
+          <p>Displays live weather for any city using a public weather API.</p>
+          <a href="projects">View Project</a>
+        </article>
+
+        <!-- 3rd card -->
+        <article>
+          <h2>✅ Task Tracker</h2>
+          <p>A simple to-do list app where you can add, complete, and delete tasks.</p>
+          <a href="projects">View Project</a>
+        </article>
+
+        <a href="projects">See All Projects</a>
+
+       </section>
+      
+  </main>
+
+
+  <footer>
+    <p>&copy; 2026 Alex Dev. Built with ❤️ and lots of coffee.</p>
+
+    <nav>
+      <a href="home">Home</a>
+      <a href="projects">Projects</a>
+      <a href="contact">Contact</a>
+    </nav>
+  </footer>
+
+
+
+  
+
+    <!-- <h1> is the most important heading — there should only be ONE per page.
+        It's the main title of the page. -->
+    <!-- <h1>Hi, I'm Alex</h1> -->
+
+    <!-- <p> is a paragraph — blocks of text content -->
+    <!-- <p class="hero-subtitle">
+    A web developer who loves building things for the internet.
+    I write clean HTML, CSS, and JavaScript.
+    </p> -->
+
+    <!-- WEEK 2: Images need two attributes:
+            - src: WHERE the image file is
+            - alt: a TEXT DESCRIPTION of the image (accessibility)
+            Never skip alt text. Screen readers read it aloud. -->
+
+    <!-- <img src="avatar.webp" alt="User Avatar" /> -->
+    <!-- <img
+        src="https://placehold.co/300x300/ff6b35/ffffff?text=Alex"
+        alt="Alex, a smiling web developer"
+        width="300"
+        height="300"
+    /> -->
+
+    <!-- <a href="https://www.kinelacademy.com" target="_blank">Visit KineL Academy</a> -->
+    <!-- <input type="text" placeholder="Enter your name"  /> -->
+
+
+</body>
+</html>
