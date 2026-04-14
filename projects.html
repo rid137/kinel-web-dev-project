@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,5 +8,198 @@
 <body>
     <h1>This is the project page</h1>
     <a href="index.html">Go back home</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<!--
+  ============================================================
+  WEEK 3 — Links & Page Navigation
+  ============================================================
+  What we're building: The PROJECTS page of Alex's portfolio.
+
+  Key concepts reinforced here:
+  - Linking between pages with <a href="...">
+  - Consistent <header> and <footer> across pages (copy & paste)
+  - Using <section> and <article> to structure content
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Note: Each page has its OWN title in the browser tab -->
+  <title>Projects — Alex Dev</title>
+</head>
+
+<body>
+
+  <!-- ==================== HEADER ======================== -->
+  <!--
+    TEACHING POINT — WEEK 3:
+    The header is IDENTICAL on every page. This gives users
+    a consistent navigation experience. In a real project,
+    you'd use a framework or templating system. For now,
+    we copy and paste it.
+  -->
+    <header>
+        <p>Alex.dev</p>
+        <!-- <nav> wraps navigation links — tells browsers this is site navigation -->
+        <nav>
+            <!-- href="index.html" links to the home page (current page) -->
+            <a href="index.html" class="active">Home</a>
+
+            <!-- href="projects.html" links to our second page (Week 3) -->
+            <a href="projects.html">Projects</a>
+
+            <!-- href="contact.html" links to our third page (Week 3) -->
+            <a href="contact.html">Contact</a>
+            
+            <span>Dark Mode</span>
+        </ul>
+        </nav>
+
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="projects.html" target="_blank">Projects</a>
+            <a href="contact.html" target="_blank">Contact</a>
+            <span>Dark Mode</span>
+        </nav>
+    </header>
+
+
+  <main>
+
+    <!-- =========== PAGE HERO =========== -->
+    <section>
+      <h1>My Projects</h1>
+      <p>Things I've built while learning to code. More coming soon.</p>
+    </section>
+
+
+    <!-- =========== PROJECTS SECTION =========== -->
+    <section>
+
+      <div>
+
+        <!--
+          WEEK 2: We use <article> for self-contained content.
+          Each project card is an "article" — it makes sense on its own.
+          article > section > div — go from most semantic to least.
+        -->
+        <article>
+          <diV>
+            <span>🍕</span>
+            <h2>Recipe Finder</h2>
+          </div>
+          <p>
+            A webpage where you enter ingredients you have at home and it
+            suggests recipes you could make. Built with pure HTML, CSS, and
+            JavaScript — no libraries.
+          </p>
+
+          <!-- WEEK 3: An unordered list — perfect for technologies used -->
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <div>
+            <!-- target="_blank" opens in new tab | rel="noopener" is a security best practice -->
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+
+        <article>
+          <div>
+            <span>🌦️</span>
+            <h2>Weather App</h2>
+          </div>
+          <p>
+            Enter any city name and get the current temperature, weather
+            condition, and a 3-day forecast. Connects to a public weather API
+            using JavaScript's fetch().
+          </p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Fetch API</p>
+
+
+          <div>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+
+        <article>
+          <div>
+            <span>✅</span>
+            <h2>Task Tracker</h2>
+          </div>
+          <p>
+            A to-do list where you can add tasks, mark them complete, and
+            delete them. Tasks are saved in localStorage so they survive
+            a page refresh.
+          </p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>localStorage</p>
+
+
+          <div>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+
+        <article>
+          <div>
+            <span>🎨</span>
+            <h2>This Portfolio</h2>
+          </div>
+          <p>
+            The site you're looking at right now! Built from scratch during
+            the Kinel Academy Introduction to Web Development course.
+            Fully responsive and deployed on GitHub Pages.
+          </p>
+            <p>HTML</p>
+            <p>CSS Flexbox</p>
+            <p>JavaScript</p>
+            <p>GitHub Pages</p>
+
+
+          <div>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ======================== -->
+  <!-- Same footer on every page -->
+  <footer>
+    <p>&copy; 2026 Alex Dev. Built with ❤️ and lots of coffee.</p>
+
+    <nav>
+      <a href="home">Home</a>
+      <a href="projects">Projects</a>
+      <a href="contact">Contact</a>
+    </nav>
+  </footer>
+
 </body>
 </html>

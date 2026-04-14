@@ -30,13 +30,25 @@
   <title>Alex Dev — Web Developer</title>
 </head>
 
-<!-- For icons -->
-<!-- win+. -->
 
 <body>
   <!-- Header -->
   <header>
     <p>Alex.dev</p>
+    <!-- <nav> wraps navigation links — tells browsers this is site navigation -->
+    <nav>
+        <!-- href="index.html" links to the home page (current page) -->
+        <a href="index.html" class="active">Home</a>
+
+        <!-- href="projects.html" links to our second page (Week 3) -->
+        <a href="projects.html">Projects</a>
+
+        <!-- href="contact.html" links to our third page (Week 3) -->
+        <a href="contact.html">Contact</a>
+        
+        <span>Dark Mode</span>
+      </ul>
+    </nav>
 
     <nav>
       <a href="index.html" target="_blank">Home</a>
@@ -71,90 +83,97 @@
       <h1>Alex</h1>
      </section> 
 
-     <!-- row & column -->
+     <!-- =========== SKILLS SECTION =========== -->
+    <!--
+      WEEK 3: We use a <table> here to display structured data (skills + levels).
+      Rule: Tables are for DATA, never for page layout.
+    -->
+    <section class="skills" id="skills">
 
-     <!-- My Skill Section -->
+      <h2>My Skills</h2>
+
+      <!--
+        TABLE ANATOMY (Week 3):
+        <table>  — the table container(divided into 2 parts ===> thead and tbody)
+        <thead>  — table header group (column titles)
+        <tbody>  — table body (the actual data rows)
+        <tr>     — table row
+        <th>     — table header cell (bold by default)
+        <td>     — table data cell
+      -->
+      <table class="skills-table">
+        <!-- Head part -->
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+
+        <!-- Body part -->
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>Semantic, accessible markup</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>Flexbox, responsive design</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>⭐⭐⭐</td>
+            <td>DOM manipulation, events</td>
+          </tr>
+          <tr>
+            <td>Git</td>
+            <td>⭐⭐⭐</td>
+            <td>Version control basics</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+
+    <!-- FOR STUDENTS ==> Include the correct href for the links in this section  -->
+    <!-- Featured Projects Section -->
       <section>
-        <h2>My Skills</h2>
+      <h2>Featured Projects</h2>
+      <p>A few things I've built so far.</p>
 
-        <table>
-          <!-- Header part -->
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Level</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
+      <!-- 1st card -->
+      <article>
+        <h2>🍕 Recipe Finder</h2>
+        <p>A webpage that shows recipes based on ingredients you have at home.</p>
+        <a href="">View Project</a>
+      </article>
 
-          <!-- Body part -->
-          <tbody>
-            <!-- row 1 -->
-            <tr>
-              <td>HTML</td>
-              <td>⭐⭐⭐⭐⭐</td>
-              <td>Semantic, accessible markup</td>
-            </tr>
-           <!-- row 2 -->
-            <tr>
-              <td>CSS</td>
-              <td>⭐⭐⭐⭐⭐</td>
-              <td>Flexbox, responsive design</td>
-            </tr>
-            <!-- row 3 -->
-            <tr>
-              <td>JavaScript</td>
-              <td>⭐⭐⭐⭐⭐</td>
-              <td>DOM manipulation, events</td>
-            </tr>
-            <!-- row 4 -->
-            <tr>
-              <td>GIT</td>
-              <td>⭐⭐⭐⭐⭐</td>
-              <td>Version control basics</td>
-            </tr>
-          </tbody>
+      <!-- 2nd card -->
+      <article>
+        <h2>🌦️ Weather App</h2>
+        <p>Displays live weather for any city using a public weather API.</p>
+        <a href="">View Project</a>
+      </article>
 
+      <!-- 3rd card -->
+      <article>
+        <h2>✅ Task Tracker</h2>
+        <p>A simple to-do list app where you can add, complete, and delete tasks.</p>
+        <a href="">View Project</a>
+      </article>
 
+      <a href="">See All Projects</a>
 
-
-        </table>
       </section>
-
-
-      <!-- Featured Projects Section -->
-       <section>
-        <h2>Featured Projects</h2>
-        <p>A few things I've built so far.</p>
-
-        <!-- 1st card -->
-        <article>
-          <h2>🍕 Recipe Finder</h2>
-          <p>A webpage that shows recipes based on ingredients you have at home.</p>
-          <a href="projects">View Project</a>
-        </article>
-
-        <!-- 2nd card -->
-        <article>
-          <h2>🌦️ Weather App</h2>
-          <p>Displays live weather for any city using a public weather API.</p>
-          <a href="projects">View Project</a>
-        </article>
-
-        <!-- 3rd card -->
-        <article>
-          <h2>✅ Task Tracker</h2>
-          <p>A simple to-do list app where you can add, complete, and delete tasks.</p>
-          <a href="projects">View Project</a>
-        </article>
-
-        <a href="projects">See All Projects</a>
-
-       </section>
       
   </main>
 
 
+    <!-- FOR STUDENTS ==> Include the correct href for the links in this footer  -->
   <footer>
     <p>&copy; 2026 Alex Dev. Built with ❤️ and lots of coffee.</p>
 
@@ -164,36 +183,6 @@
       <a href="contact">Contact</a>
     </nav>
   </footer>
-
-
-
-  
-
-    <!-- <h1> is the most important heading — there should only be ONE per page.
-        It's the main title of the page. -->
-    <!-- <h1>Hi, I'm Alex</h1> -->
-
-    <!-- <p> is a paragraph — blocks of text content -->
-    <!-- <p class="hero-subtitle">
-    A web developer who loves building things for the internet.
-    I write clean HTML, CSS, and JavaScript.
-    </p> -->
-
-    <!-- WEEK 2: Images need two attributes:
-            - src: WHERE the image file is
-            - alt: a TEXT DESCRIPTION of the image (accessibility)
-            Never skip alt text. Screen readers read it aloud. -->
-
-    <!-- <img src="avatar.webp" alt="User Avatar" /> -->
-    <!-- <img
-        src="https://placehold.co/300x300/ff6b35/ffffff?text=Alex"
-        alt="Alex, a smiling web developer"
-        width="300"
-        height="300"
-    /> -->
-
-    <!-- <a href="https://www.kinelacademy.com" target="_blank">Visit KineL Academy</a> -->
-    <!-- <input type="text" placeholder="Enter your name"  /> -->
 
 
 </body>
