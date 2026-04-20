@@ -1,0 +1,18 @@
+Q1. Why must every <label> have a "for" attribute that matches
+an input's id? Write a correct label-input pair from memory.
+
+Answer ==> cos it serves to bind the label and input together
+
+<labe for="firstname">First name<label/>
+<input id="firstname" type="text" />
+
+<labe for="email">Email address<label/>
+<input id="email" type="email" />
+
+<labe for="phoneNumber">Phone number<label/>
+<input id="phoneNumber" type="number" />
+
+
+
+Q2. What is different about type=email vs type=text vs
+type=password? Give one real-world use case for each.
