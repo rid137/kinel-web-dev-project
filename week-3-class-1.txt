@@ -1,9 +1,13 @@
-Q1. Why must every <label> have a for attribute that matches
+ASSIGNMENT
+
+1. Why must every <label> have a for attribute that matches
 an input's id? Write a correct label-input pair from memory.
 
-Answer => hrebgejhbvjfhbvbdvbf vdbn nc bnd
+2. What is different about type=email vs type=text vs
+type=password? Give one real-world use case for each.
 
-Q2. What is the difference between href='about.html' and
+3. What is the difference between href='about.html' and
 href='#section-id'? When would you use each one?
 
-Answer => ngvcbvcbvcbvcbv
+4. When is it correct to use an HTML <table>? Give one
+example of good table use and one example of bad table use
