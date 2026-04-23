@@ -28,51 +28,60 @@
 
   <!-- This text appears in the browser tab -->
   <title>Alex Dev — Web Developer</title>
+  <!-- WEEK 3: This line links our external CSS file.
+       rel="stylesheet" tells the browser what kind of file it is.
+       href is the path to the file, relative to this HTML file. -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
   <!-- Header -->
-  <header>
-    <p>Alex.dev</p>
+ <header class="site-header">
+
+    <!-- The site name / logo -->
+    <div class="logo">
+      <a href="index.html">Alex<span class="accent">.</span>Dev</a>
+    </div>
+
+    <button> ☰  </button>
+
     <!-- <nav> wraps navigation links — tells browsers this is site navigation -->
-    <nav>
+    <nav class="main-nav" id="mainNav">
+      <ul>
         <!-- href="index.html" links to the home page (current page) -->
-        <a href="index.html" class="active">Home</a>
+        <li><a href="index.html" class="active">Home</a></li>
 
         <!-- href="projects.html" links to our second page (Week 3) -->
-        <a href="projects.html">Projects</a>
+        <li><a href="projects.html">Projects</a></li>
 
         <!-- href="contact.html" links to our third page (Week 3) -->
-        <a href="contact.html">Contact</a>
-        
-        <span>Dark Mode</span>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li>
+          <button class="dark-toggle" id="darkToggle">🌙 Dark Mode</button>
+        </li>
       </ul>
     </nav>
-
-    <nav>
-      <a href="index.html" target="_blank">Home</a>
-      <a href="projects.html" target="_blank">Projects</a>
-      <a href="contact.html" target="_blank">Contact</a>
-      <span>Dark Mode</span>
-    </nav>
   </header>
+
 
   <!-- Main -->
   <main>
 
     <!-- hero section/showcase -->
-    <section>
+    <section class="hero" id="home">
       <h1>Hi, I'm Alex 👋 updated on github</h1>
 
-      <p>A web developer who loves building things for the internet. I write clean HTML, CSS, and JavaScript.</p>
+      <p class="hero-subtitle">
+        A web developer who loves building things for the internet. I write clean HTML, CSS, and JavaScript.</p>
 
       <a href="projects">View My Works</a>
       <a href="contacts">Get In Touch</a>
     </section>
 
     <!-- About Me Section -->
-     <section>
+     <section class="about" id="about">
       <h2>About Me</h2>
       <p>I'm a junior web developer based in London. I started learning to code at Kinel Academy and fell in love with turning ideas into real things people can use online.</p>
 

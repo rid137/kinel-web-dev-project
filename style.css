@@ -1,0 +1,150 @@
+
+  /* ============================================================
+  ALEX DEV PORTFOLIO — style.css
+
+  WEEK 3: Colors, fonts, spacing (added in Week 3) */
+
+/* CSS Variable
+ :root { --brand-color: #FF6B35; } h1 { color: var(--brand-color); } — define once on :root, use anywhere
+with var(). */
+
+/* ============================================================
+   1. CSS VARIABLES (Custom Properties)
+   ============================================================
+   WEEK 3 — CSS Fundamentals
+
+   CSS variables let you define a value ONCE and reuse it everywhere.
+   Change one variable → the change updates across the entire site.
+
+   Syntax: --variable-name: value;
+   Usage:  color: var(--variable-name);
+
+   We define them on :root so they're available on every element.
+   ============================================================ */
+
+:root {
+  /* Colour palette */
+  --color-primary:    #ff6b35;   /* Orange — our main brand colour */
+  --color-secondary:  #1a1a2e;   /* Deep navy — used for dark backgrounds */
+  --color-accent:     #e94560;   /* Pink-red — for highlights and hover states */
+
+  /* Background and text colours */
+  --color-bg:         #ffffff;   /* Page background */
+  --color-bg-soft:    #f8f9fa;   /* Slightly off-white for sections */
+  --color-text:       #2d2d2d;   /* Main body text — NOT pure black (easier on eyes) */
+  --color-text-muted: #6b7280;   /* Lighter text for subtitles and captions */
+
+  /* Border */
+  --color-border:     #e5e7eb;
+
+  /* Spacing scale — consistent gaps throughout the site */
+  --space-xs:   0.5rem;    /*  8px */
+  --space-sm:   1rem;      /* 16px */
+  --space-md:   1.5rem;    /* 24px */
+  --space-lg:   2rem;      /* 32px */
+  --space-xl:   3rem;      /* 48px */
+  --space-2xl:  5rem;      /* 80px */
+
+  /* Typography */
+  --font-body:    'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Segoe UI', system-ui, sans-serif;
+
+  /* Borders */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+}
+
+
+.site-header {
+  align-items: center;                 /* Vertically centre both */
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--color-secondary);
+  top: 0;
+  z-index: 100;                        /* Ensure it stays above all other content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo link */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation list — horizontal links */
+.main-nav ul {
+  align-items: center;
+  gap: var(--space-md);    /* Space between nav items */
+  list-style: none;        /* Remove bullet points */
+}
+
+.main-nav a {
+  color: rgba(255, 255, 255, 0.8);   /* Slightly transparent white */
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+
+/* ============================================================
+   3. TYPOGRAPHY
+   ============================================================
+   WEEK 3 — CSS Fundamentals: Fonts & Text
+   ============================================================ */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;              /* Tighter line-height for headings */
+  color: var(--color-secondary); /* Headings use our dark navy colour */
+  margin-bottom: var(--space-sm);
+}
+
+h1 { font-size: 2.5rem; }   /* 40px */
+h2 { font-size: 2rem; }     /* 32px */
+h3 { font-size: 1.5rem; }   /* 24px */
+
+p {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+/* HERO SECTION */
+
+.hero {
+  justify-content: center;   /* Centre vertically */
+  align-items: flex-start;   /* Align to the left */
+  min-height: 70vh;          /* At least 70% of the viewport height */
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #16213e 100%);
+  color: white;
+  padding: var(--space-2xl) var(--space-md);
+  max-width: 100%;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Fluid font size — scales with viewport */
+  color: white;
+  margin-bottom: var(--space-md);
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 540px;
+  margin-bottom: var(--space-lg);
+}
+
+/* ============================================================
+   ABOUT SECTION
+   ============================================================ */
+
+.about {
+  background-color: var(--color-bg-soft);
+  border-radius: var(--radius-lg);
+}
